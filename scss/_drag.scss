@@ -61,8 +61,7 @@
         color: $secondary-color;
     };
     .task {
-        margin-left: 20px;
-        margin-top: 25px;
+        z-index: 1;
     };
     .drop {
         color: $secondary-color;

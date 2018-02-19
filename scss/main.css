@@ -189,8 +189,7 @@
     margin-top: 3px;
     color: #8492af; }
   .dd .task {
-    margin-left: 20px;
-    margin-top: 25px; }
+    z-index: 1; }
   .dd .drop {
     color: #8492af;
     font-size: 14px;
@@ -282,7 +281,88 @@
   .psd .mockup {
     text-align: center;
     padding-top: 60px;
-    padding-bottom: 110px; }
+    padding-bottom: 110px;
+    position: relative; }
+    .psd .mockup .mockup-text {
+      position: absolute;
+      top: 124px;
+      padding: 0px 80px;
+      margin: 0px; }
+      @media screen and (max-width: 992px) {
+        .psd .mockup .mockup-text {
+          padding: 0px;
+          margin-top: -10px; } }
+      @media screen and (max-width: 768px) {
+        .psd .mockup .mockup-text {
+          padding: 0px;
+          margin-top: -28px; } }
+      @media screen and (max-width: 570px) {
+        .psd .mockup .mockup-text {
+          padding: 0px;
+          margin-top: -38px; } }
+    .psd .mockup .first-row-h2 {
+      font-size: 16.8px;
+      font-weight: 700;
+      text-align: left;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #5584ff;
+      margin-right: 20px; }
+    .psd .mockup .first-row-h2::after {
+      content: '';
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      float: right;
+      margin: 15px 0;
+      border-radius: 50px;
+      background-color: #5584ff;
+      box-shadow: 0px 0px 0px 10px #5584ff94; }
+      @media screen and (max-width: 992px) {
+        .psd .mockup .first-row-h2::after {
+          margin: 15px -15px; } }
+    .psd .mockup .first-row-p {
+      font-size: 12.6px;
+      font-weight: 400;
+      text-align: left;
+      padding: 0px;
+      color: #8492af; }
+    .psd .mockup .second-row-h2 {
+      font-size: 16.8px;
+      font-weight: 700;
+      text-align: right;
+      margin-top: 206px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #5584ff;
+      margin-left: 20px; }
+      @media screen and (max-width: 992px) {
+        .psd .mockup .second-row-h2 {
+          margin-top: 168px; } }
+      @media screen and (max-width: 992px) {
+        .psd .mockup .second-row-h2 {
+          margin-top: 126px; } }
+    .psd .mockup .second-row-h2::after {
+      content: '';
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      float: left;
+      margin: 15px 0;
+      border-radius: 50px;
+      background-color: #5584ff;
+      box-shadow: 0px 0px 0px 10px #5584ff94; }
+      @media screen and (max-width: 992px) {
+        .psd .mockup .second-row-h2::after {
+          margin: 15px -15px; } }
+    .psd .mockup .second-row-p {
+      font-size: 12.6px;
+      font-weight: 400;
+      text-align: right;
+      float: right;
+      color: #8492af;
+      padding: 0px; }
+      @media screen and (max-width: 992px) {
+        .psd .mockup .second-row-p {
+          float: none; } }
   .psd .pricing {
     text-align: center;
     padding-bottom: 73px; }

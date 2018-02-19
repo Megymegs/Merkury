@@ -97,13 +97,13 @@
             <img src="images\grid.png" width="100%" height="595px"  class="d-inline-block align-top graph" alt="grid background">
             <section class="container dd">
                 <div class="row drag">
-                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3" ondrop="drop(event)" ondragover="allowDrop(event)">
                         <h4>In Progres<span class="span-s">s</span></h4>
                         <h4 class="number1">(3)</h4>
                         <span class="oi oi-chevron-right"></span>
                         <img src="images\task1.png" width="273px"  class="d-inline-block col-12" alt="task1">
                         <img src="images\task2.png" width="273px"   class="d-inline-block col-12" alt="task2">
-                        <img src="images\task3.png" width="273px"   class="d-inline-block col-12 task" alt="task3">
+                        <img src="images\task3.png" width="273px"   class="d-inline-block col-12 task"draggable="true" ondragstart="drag(event)" id="drag1" alt="task3">
                     </div>
                     <div class="col-6 col-sm-6 col-md-6 col-lg-3">
                         <h4>Completed</h4>
@@ -111,7 +111,7 @@
                         <img src="images\task4.png" width="273px"   class="d-inline-block col-12" alt="task4">
                         <img src="images\task5.png" width="273px"  class="d-inline-block col-12" alt="task5">
                         <div class="d-inline-block col-12 drop">
-                            <p>Drop here</p>
+                            <p id="drop" ondrop="drop(event)" ondragover="allowDrop(event)">Drop here</p>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-6 icons">
@@ -136,6 +136,16 @@
                 </div>
                 <div class="mockup">
                     <img src="images\mockup.png" class="d-inline-block align-top img-fluid" alt="">
+                    <section class="row mockup-text">
+                            <div class="col-6">
+                                <h2 class="first-row-h2">Clean & modern layout</h2>
+                                <p  class="first-row-p col-lg-6 col-sm-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                            </div>
+                            <div class="col-6">
+                                <h2  class="second-row-h2">Clean & modern layout</h2>
+                                <p  class="second-row-p col-lg-6 col-sm-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                            </div>
+                    </section>
                 </div>
                 <div class="pricing">
                     <div class="row plans">
@@ -211,5 +221,18 @@
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script>
+            function allowDrop(ev) {
+                ev.preventDefault();
+            }            
+            function drag(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+            function drop(ev) {
+                ev.preventDefault();
+                var data = ev.dataTransfer.getData("text");
+                ev.target.append(document.getElementById(data));
+            }
+        </script>
     </body>
 </html>

@@ -23,6 +23,94 @@
         text-align: center;
         padding-top: 60px;
         padding-bottom: 110px;
+        position: relative;
+        .mockup-text {
+            position: absolute;
+            top: 124px;
+            padding: 0px 80px;
+            margin: 0px;
+            @media screen and (max-width: $break-med){
+                padding: 0px;
+                margin-top: -10px;
+            };
+            @media screen and (max-width: $break-sm){
+                padding: 0px;
+                margin-top: -28px;
+            }; 
+            @media screen and (max-width: $break-xs){
+                padding: 0px;
+                margin-top: -38px;
+            };   
+        };
+        .first-row-h2 {
+            font-size: $f-p;
+            font-weight: $f-bold;
+            text-align: left;
+            padding-bottom: 10px;
+            border-bottom: 2px solid $button;
+            margin-right: 20px;
+        };
+        .first-row-h2::after{
+            content: '';
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            float: right;
+            margin: 15px 0;
+            border-radius: 50px;
+            background-color: $button;
+            box-shadow: 0px 0px 0px 10px #5584ff94;
+            @media screen and (max-width: $break-med){
+                margin: 15px -15px;
+            };
+         };
+        .first-row-p {
+            font-size: $f-button-size;
+            font-weight: $font-reg;
+            text-align: left;
+            padding: 0px;
+            color: $secondary-color;
+        };
+        .second-row-h2 {
+            font-size: $f-p;
+            font-weight: $f-bold;
+            text-align: right;
+            margin-top: 206px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid $button;
+            margin-left: 20px;
+            @media screen and (max-width: $break-med){
+                margin-top: 168px;
+            };   
+            @media screen and (max-width: $break-med){
+                margin-top: 126px;
+            }; 
+        };
+        .second-row-h2::after{
+            content: '';
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            float: left;
+            margin: 15px 0;
+            border-radius: 50px;
+            background-color: $button;
+            box-shadow: 0px 0px 0px 10px #5584ff94;
+            @media screen and (max-width: $break-med){
+                margin: 15px -15px;
+            };
+         };
+        .second-row-p {
+            font-size: $f-button-size;
+            font-weight: $font-reg;
+            text-align: right;
+            float: right;
+            color: $secondary-color;
+            padding: 0px;
+            @media screen and (max-width: $break-med){
+                float: none;
+            };   
+        };
     };
     .pricing {
         text-align: center;
@@ -85,8 +173,6 @@
         font-weight: $font-reg;
         font-size: $f-p;
     };
-    .shadow {
-    }
     .amount {
         display: inline-flex;
     };
