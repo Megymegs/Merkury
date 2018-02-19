@@ -1,0 +1,45 @@
+.features {
+    padding-top: 180px;
+    padding-bottom: 103px;
+    .col-sm-4, .col-md-4, .col-lg-4 {
+        text-align: center;    
+    };
+    .lines {
+        position: absolute;
+        margin: 20px 0px;
+        @media screen and (max-width: $break-xs){
+            display: none;
+        }
+    }
+    .icons {
+        @media screen and (max-width: $break-xs){
+            margin-top: 40px;
+        }
+    };
+    img {
+        margin-bottom: 42px;
+    };
+    h4 {
+        margin-bottom: 23px;
+        font-size: $f-p;
+        font-weight: $f-bold;
+    };
+    p {        
+        font-size: $f-button-size;
+        font-weight: $font-reg;
+        color: $secondary-color;
+        padding: 0px 10px;
+    };
+    .more {
+        margin-top: 40px;
+        background-color: white;
+        color: black;
+        font-weight: $f-bold;
+        font-size: $f-button-size;
+        width: 178px;
+        cursor: pointer;
+        border-radius: $button-radius;
+        border-color: rgba(132, 146, 175, 0.3);
+    }
+}
+

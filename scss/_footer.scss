@@ -1,0 +1,39 @@
+.footer {
+    background-color: $primary-color;
+    width: 100%;
+    padding: 47px 0px;
+}
+.foot {
+    color: $secondary-color;
+    overflow: hidden;
+    h3 {
+        float: left;
+        font-size: $f-button-size;
+        font-weight: $font-reg;
+        line-height: 2.4;
+        margin: auto;
+        @media screen and (max-width: $break-med){
+            float: none;
+        };
+    };
+    ul {
+        float: right;
+        list-style-type: none;
+        margin-bottom: 0px; 
+        @media screen and (max-width: $break-med){
+            float: none;
+            padding-left: 0px;
+        };
+    };
+    li {
+        display: inline;
+        font-size: $f-button-size;
+        font-weight: $font-reg;
+    };
+    .words {
+    margin-right: 35px;
+    };
+    .middle {
+        margin: 0px 12px;
+    };
+}

@@ -1,0 +1,147 @@
+.background2 {
+    height: 595px;
+    @media screen and (max-width: $break-med){
+        height: 650px;
+    };
+}
+
+.graph {
+    position: absolute;
+    @media screen and (max-width: $break-med){
+        height: 650px;
+    };
+}
+
+.dd {
+    padding: 118px 0px 139px;
+    @media screen and (max-width: $break-xs){
+        padding: 70px 10px 139px;
+    };
+    h4 {
+        font-weight: $f-med;
+        font-size: 21.41px;
+        color: white;
+        float: left;
+    };
+    .span-s {
+        color: black;
+        opacity: 0.1;
+    };
+    .number1, .number2 {        
+        font-weight: $f-med;
+        font-size: 21.41px;
+        color: $secondary-color;
+    };
+    .number1 {
+        margin-left: 8px;
+        margin-right: 108px;
+        @media screen and (max-width: $break-lg){
+            margin-right: 63px;
+        };
+        @media screen and (max-width: $break-med){
+            margin-right: 190px;
+        };
+        @media screen and (max-width: $break-sm){
+            margin-right: 53px;
+        };
+        @media screen and (max-width: $break-xs){
+            margin-right: 104px;
+        };        
+    };
+    .number2 {
+        margin-left: 8px;
+    };
+    .oi-chevron-right {
+        margin-top: 6px;
+        color: $secondary-color;
+    };
+    .oi-chevron-bottom {
+        display: none;
+        margin-top: 3px;
+        color: $secondary-color;
+    };
+    .task {
+        margin-left: 20px;
+        margin-top: 25px;
+    };
+    .drop {
+        color: $secondary-color;
+        font-size: 14px;
+        font-weight: $f-med;
+        border: 1px dashed;
+        border-color: $secondary-color;
+        margin-top: 9px;
+        padding: 22px!important;
+        text-align: center;
+        p {
+            margin-bottom: 0px;
+        }
+    };
+    .icons {
+        padding-top: 40px;
+        padding-left: 142px;
+        @media screen and (max-width: $break-med){
+            padding-top: 14px;
+            padding-left: 14px;
+        };
+    };
+    .icons h3 {
+        font-size: $font-thin-size;
+        font-weight: $font-thin;
+        color: white;
+    };
+    .icons .p1 {
+        float: left;
+        margin-top: 34px;
+        margin-bottom: 0px;
+        color: $secondary-color;
+        font-size: $f-button-size;
+        font-weight: $font-reg;
+        @media screen and (max-width: $break-med){
+            margin-top: 10px;
+        };
+    };
+    .icons .p2 {
+        float: left;
+        margin-top: 27px;
+        margin-bottom: 0px;
+        color: $secondary-color;
+        font-size: $f-button-size;
+        font-weight: $font-reg;
+        @media screen and (max-width: $break-med){
+            margin-top: 12px;
+        };
+    };
+    .circle {
+        border: 1px solid;
+        border-radius: 50px;
+        width: 25px;
+        height: 24px;
+        border-color: white;
+        background-color: $primary-color;
+        opacity: 0.5;
+        float: left;
+        margin-right: 13px;
+        margin-top: 39px;
+        padding: 0px;
+        cursor: pointer;
+        @media screen and (max-width: $break-med){
+            margin-top: 14px;
+        };
+    };
+    .oi-caret-left {
+        margin: 2px 6px;
+        color: white;
+    };
+    .oi-caret-right {
+        margin: 2px 9px;
+        color: white;
+    };
+    .col-12 {
+        padding: 9px 0px 0px;  
+        cursor: url(../images/hand.png), auto;
+    };
+    .col-12:active {
+        cursor: url(../images/hand-bckgd.png) 20 17, auto;
+    }
+}

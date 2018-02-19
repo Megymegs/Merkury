@@ -1,0 +1,24 @@
+
+@import "colors";
+@import "break-points";
+@import "fonts";
+@import "header";
+@import "icon-features";
+@import "drag";
+@import "psd";
+@import "footer";
+
+
+
+// break points transitioning throught site for smooth device adjustment
+.container {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+
+
+
+

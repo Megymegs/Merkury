@@ -1,0 +1,140 @@
+.back-psd {
+    background-color: #f6f7fa;
+    width: 100%;
+    background: linear-gradient(#f6f7fa 52%, white 100%);
+}
+
+.psd {
+    padding-top: 71px;
+    h1 {
+        font-size: $font-thin-size;
+        font-weight: $font-thin;
+        color: $primary-color;
+        text-align: center;
+    };
+    .p1 {
+        font-size: $f-button-size;
+        font-weight: $font-reg;
+        color: $secondary-color;
+        text-align: center;
+        margin-top: 31px;
+    };
+    .mockup {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 110px;
+    };
+    .pricing {
+        text-align: center;
+        padding-bottom: 73px;
+    };
+    .p2 {
+        font-size: $f-button-size;
+        font-weight: $font-reg;
+        color: $secondary-color;
+        padding: 105px 164px 47px;
+        @media screen and (max-width: $break-med){
+            padding: 109px 0px 47px;
+        };
+    };
+    .join {
+        width: 142px;
+        border-radius: $button-radius;
+        background-color: $button;
+        color: white;
+        cursor: pointer;
+        font-size: $f-button-size;
+        margin: 0px 22px;
+    };
+    .lines {
+        position: absolute;
+        bottom: 70px;
+        left: 0px;
+        display: inline-flex;
+        hr {
+            width: 160px;
+        }
+        .hr1 {
+            margin-right: 0px;
+        };
+        .hr2 {
+            margin-left: 0px;
+        };
+    };
+    .plans {
+        margin: 0px;
+    };
+    .col-top-m {
+        box-shadow: 0px 0px 20px 30px #f1f2f3;
+        padding: 32px 0px;
+        margin: 0px 45.5px;
+        @media screen and (max-width: $break-med){
+            margin-top: 80px;
+            padding: 50px 0px;
+        };
+    }
+    .plans h3 {
+        width: 100px;
+        font-size: 50.4px;
+        font-weight: $f-bold;
+        color: $primary-color;
+    };
+    .plans h4 {
+        margin-bottom: 38px;
+        color: $primary-color;
+        font-weight: $font-reg;
+        font-size: $f-p;
+    };
+    .shadow {
+    }
+    .amount {
+        display: inline-flex;
+    };
+    .h51, .h52, .h53 {
+        font-size: 28.01px;
+        font-weight: $f-bold;
+        color: $primary-color;
+        width: 18px;
+        height: 26px;
+        margin-top: 19px;
+        margin-bottom: 0px;
+    };
+    .plans span {
+        color: $secondary-color;
+        font-weight: $font-reg;
+        font-size: $f-p;
+    };
+    ul {
+        clear: both;
+        padding-left: 0
+    }
+    li {
+        font-size: $f-button-size;
+        color: $secondary-color;
+        list-style: none;
+        line-height: 13px;
+        margin-top: 13px;
+    };
+    .yes:before {
+        content: '';
+        display: inline-block;
+        height: 16px;
+        width: 16px;    
+        background-image: url(../images/checked.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-left: -10px;
+        margin-right: 10px;
+    };
+    .no:before {
+        content: '';
+        display: inline-block;
+        height: 16px;
+        width: 16px;    
+        background-image: url(../images/unchecked.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-left: -10px;
+        margin-right: 10px;
+    }
+}
